@@ -1,0 +1,1071 @@
+{
+	"statusCode": 0,
+	"data": {
+		"statusMessage": "done successfully",
+		"cards": [
+			{
+				"card": {
+					"card": {
+						"@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+						"text": "Olio - The Wood Fired Pizzeria",
+						"headerStyling": {
+							"textColor": "text_Highest_Emphasis",
+							"textVariant": "header_H3_Black"
+						}
+					}
+				}
+			},
+			{
+				"groupedCard": {
+					"cardGroupMap": {
+						"REGULAR": {
+							"cards": [
+								{
+									"card": {
+										"card": {
+											"@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+											"badges": {},
+											"vegOnlyDetails": {
+												"imageId": "AutoVegOnly_qkjowj",
+												"title": "Showing only vegetarian options.",
+												"description": "Tap on the VEG ONLY button to turn off the setting"
+											},
+											"offersFilter": {
+												"attributes": {
+													"displayText": "Buy 1 Get 1"
+												}
+											},
+											"topRatedFilter": {
+												"attributes": {
+													"displayText": "Ratings 4.0+"
+												}
+											},
+											"kidsCategoryFilter": {
+												"attributes": {
+													"displayText": "Kids Favourites",
+													"tooltip": {
+														"enabled": true,
+														"displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+													}
+												}
+											},
+											"vegFilter": {
+												"attributes": {
+													"displayText": "VEG"
+												}
+											},
+											"nonvegFilter": {
+												"attributes": {
+													"displayText": "NONVEG"
+												}
+											}
+										},
+										"relevance": {
+											"type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+											"sectionId": "MENU_FILTER_TOGGLE"
+										}
+									}
+								},
+								{
+									"card": {
+										"card": {
+											"@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+											"title": "Recommended",
+											"itemCards": [
+												{
+													"card": {
+														"@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+														"info": {
+															"id": "133866633",
+															"name": "Deluxe Veggie Pizza",
+															"category": "Wood Fired Veg Pizza",
+															"description": "Serves 1 | Our signature pizza crust loaded with Classic Mozzarella Cheese + Cheddar Cheese + Onion + Green Bell Pepper",
+															"imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/c56e6232-17d8-47cd-958e-33370c0f8080_15ecf959-66a1-4083-8cc2-017c96331004.jpg_compressed",
+															"inStock": 1,
+															"isVeg": 1,
+															"variants": {},
+															"variantsV2": {
+																"variantGroups": [
+																	{
+																		"groupId": "55586486",
+																		"name": "Size",
+																		"variations": [
+																			{
+																				"name": "8 Inch (Regular)",
+																				"price": 289,
+																				"default": 1,
+																				"id": "173012735",
+																				"inStock": 1,
+																				"isVeg": 1,
+																				"isEnabled": 1
+																			},
+																			{
+																				"name": "10 Inch (Medium)",
+																				"price": 509,
+																				"id": "173012736",
+																				"inStock": 1,
+																				"isVeg": 1,
+																				"isEnabled": 1
+																			},
+																			{
+																				"name": "12 Inch (Large)",
+																				"price": 709,
+																				"id": "173012739",
+																				"inStock": 1,
+																				"isVeg": 1,
+																				"isEnabled": 1
+																			}
+																		]
+																	}
+																],
+																"pricingModels": [
+																	{
+																		"variations": [
+																			{
+																				"groupId": "55586486",
+																				"variationId": "173012735"
+																			}
+																		],
+																		"price": 28900,
+																		"addonCombinations": [
+																			{
+																				"groupId": "204044084",
+																				"addonId": "134089113"
+																			},
+																			{
+																				"groupId": "204044083",
+																				"addonId": "134089073"
+																			},
+																			{
+																				"groupId": "204044083",
+																				"addonId": "134089075"
+																			},
+																			{
+																				"groupId": "204044080",
+																				"addonId": "134089129"
+																			},
+																			{
+																				"groupId": "204044080",
+																				"addonId": "134089127"
+																			},
+																			{
+																				"groupId": "204044081",
+																				"addonId": "134089092"
+																			},
+																			{
+																				"groupId": "204044081",
+																				"addonId": "134089095"
+																			}
+																		]
+																	}
+																]
+															},
+															"addons": [
+																{
+																	"groupId": "204044078",
+																	"groupName": "House Special Garlic Breads!",
+																	"choices": [
+																		{
+																			"id": "134089071",
+																			"name": "Signature Doughknots with Cheesy Jalapeno Dip",
+																			"price": 14900,
+																			"isVeg": 1,
+																			"isEnabled": 1
+																		}
+																	],
+																	"maxAddons": 5,
+																	"maxFreeAddons": -1
+																}
+															],
+															"itemAttribute": {
+																"vegClassifier": "VEG",
+																"portionSize": "Serves 1"
+															},
+															"defaultPrice": 28900,
+															"ribbon": {},
+															"showImage": true,
+															"itemBadge": {},
+															"badgesV2": {},
+															"ratings": {
+																"aggregatedRating": {
+																	"rating": "5.0",
+																	"ratingCount": "5 ratings",
+																	"ratingCountV2": "5"
+																}
+															},
+															"itemPriceStrikeOff": true
+														},
+														"analytics": {},
+														"hideRestaurantDetails": true
+													}
+												}
+											],
+											"type": "CATEGORY_TYPE_RECOMMENDED",
+											"subtitleSuffix": {},
+											"categoryId": "-1"
+										}
+									}
+								},
+								{
+									"card": {
+										"card": {
+											"@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+											"title": "Wood Fired Veg Pizza",
+											"categories": [
+												{
+													"title": "Classic",
+													"itemCards": [
+														{
+															"card": {
+																"@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+																"info": {
+																	"id": "133866633",
+																	"name": "Deluxe Veggie Pizza",
+																	"category": "Wood Fired Veg Pizza",
+																	"description": "Serves 1 | Our signature pizza crust loaded with Classic Mozzarella Cheese + Cheddar Cheese + Onion + Green Bell Pepper",
+																	"imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/c56e6232-17d8-47cd-958e-33370c0f8080_15ecf959-66a1-4083-8cc2-017c96331004.jpg_compressed",
+																	"inStock": 1,
+																	"isVeg": 1,
+																	"variants": {},
+																	"variantsV2": {
+																		"variantGroups": [
+																			{
+																				"groupId": "55586486",
+																				"name": "Size",
+																				"variations": [
+																					{
+																						"name": "8 Inch (Regular)",
+																						"price": 289,
+																						"default": 1,
+																						"id": "173012735",
+																						"inStock": 1,
+																						"isVeg": 1,
+																						"isEnabled": 1
+																					},
+																					{
+																						"name": "10 Inch (Medium)",
+																						"price": 509,
+																						"id": "173012736",
+																						"inStock": 1,
+																						"isVeg": 1,
+																						"isEnabled": 1
+																					},
+																					{
+																						"name": "12 Inch (Large)",
+																						"price": 709,
+																						"id": "173012739",
+																						"inStock": 1,
+																						"isVeg": 1,
+																						"isEnabled": 1
+																					}
+																				]
+																			}
+																		],
+																		"pricingModels": [
+																			{
+																				"variations": [
+																					{
+																						"groupId": "55586486",
+																						"variationId": "173012735"
+																					}
+																				],
+																				"price": 28900,
+																				"addonCombinations": [
+																					{
+																						"groupId": "204044084",
+																						"addonId": "134089113"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089116"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089086"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089080"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089123"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089076"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089078"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089081"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089071"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089108"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089119"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089118"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089102"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089083"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089073"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089075"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089129"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089127"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089089"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089085"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089125"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089121"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089092"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089095"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089100"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089094"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089097"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089114"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089091"
+																					}
+																				]
+																			},
+																			{
+																				"variations": [
+																					{
+																						"groupId": "55586486",
+																						"variationId": "173012736"
+																					}
+																				],
+																				"price": 50900,
+																				"addonCombinations": [
+																					{
+																						"groupId": "204044084",
+																						"addonId": "134089113"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089116"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089086"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089080"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089123"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089076"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089078"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089081"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089071"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089108"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089119"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089118"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089102"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089083"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089073"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089075"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089129"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089127"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089089"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089085"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089125"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089121"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089092"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089095"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089100"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089094"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089097"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089114"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089091"
+																					}
+																				]
+																			},
+																			{
+																				"variations": [
+																					{
+																						"groupId": "55586486",
+																						"variationId": "173012739"
+																					}
+																				],
+																				"price": 70900,
+																				"addonCombinations": [
+																					{
+																						"groupId": "204044084",
+																						"addonId": "134089113"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089116"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089086"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089080"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089123"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089076"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089078"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089081"
+																					},
+																					{
+																						"groupId": "204044078",
+																						"addonId": "134089071"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089108"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089119"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089118"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089102"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089083"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089073"
+																					},
+																					{
+																						"groupId": "204044083",
+																						"addonId": "134089075"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089129"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089127"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089089"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089085"
+																					},
+																					{
+																						"groupId": "204044080",
+																						"addonId": "134089125"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089121"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089092"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089095"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089100"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089094"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089097"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089114"
+																					},
+																					{
+																						"groupId": "204044081",
+																						"addonId": "134089091"
+																					}
+																				]
+																			}
+																		]
+																	},
+																	"addons": [
+																		{
+																			"groupId": "204044078",
+																			"groupName": "House Special Garlic Breads!",
+																			"choices": [
+																				{
+																					"id": "134089116",
+																					"name": "Italian Cheese Garlic Bread",
+																					"price": 21900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089086",
+																					"name": "Sundried Tomatoes & Olives Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089080",
+																					"name": "Italian Pork Pepperoni Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089123",
+																					"name": "Bacon Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089076",
+																					"name": "Italian Cheese Garlic Bread With Roasted Chicken",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089078",
+																					"name": "Italian Chicken Pepperoni Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089081",
+																					"name": "Peri Peri Paneer Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089071",
+																					"name": "Signature Doughknots with Cheesy Jalapeno Dip",
+																					"price": 14900,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				}
+																			],
+																			"maxAddons": 5,
+																			"maxFreeAddons": -1
+																		},
+																		{
+																			"groupId": "204044081",
+																			"groupName": "Extra Veg Toppings",
+																			"choices": [
+																				{
+																					"id": "134089121",
+																					"name": "Green Bellpepper",
+																					"price": 2900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089092",
+																					"name": "Onion",
+																					"price": 2900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089095",
+																					"name": "Black Olives",
+																					"price": 3900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089100",
+																					"name": "Jalapenos",
+																					"price": 3900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089094",
+																					"name": "Red Paprika",
+																					"price": 3900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089114",
+																					"name": "Red Capsicum",
+																					"price": 4900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089091",
+																					"name": "Yellow Capsicum",
+																					"price": 2900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089097",
+																					"name": "Paneer Red-Hot",
+																					"price": 4900,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				}
+																			],
+																			"maxAddons": 6,
+																			"maxFreeAddons": -1
+																		},
+																		{
+																			"groupId": "204044083",
+																			"groupName": "Extra Non Veg Toppings",
+																			"choices": [
+																				{
+																					"id": "134089108",
+																					"name": "Barbeque Chicken",
+																					"price": 4900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089119",
+																					"name": "Peri Peri Chicken",
+																					"price": 4900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089118",
+																					"name": "Garlic Herb Chicken",
+																					"price": 4900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089102",
+																					"name": "Chicken Tikka",
+																					"price": 4900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089073",
+																					"name": "Pork Bacon",
+																					"price": 6900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089083",
+																					"name": "Chicken Pepperoni",
+																					"price": 6900,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089075",
+																					"name": "Pork Pepperoni",
+																					"price": 6900,
+																					"isEnabled": 1
+																				}
+																			],
+																			"maxAddons": 6,
+																			"maxFreeAddons": -1
+																		},
+																		{
+																			"groupId": "204044084",
+																			"groupName": "Desserts",
+																			"choices": [
+																				{
+																					"id": "134089113",
+																					"name": "Choco Lava Cake",
+																					"price": 11900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				}
+																			],
+																			"maxAddons": 1,
+																			"maxFreeAddons": -1
+																		}
+																	],
+																	"itemAttribute": {
+																		"vegClassifier": "VEG",
+																		"portionSize": "Serves 1"
+																	},
+																	"defaultPrice": 28900,
+																	"ribbon": {},
+																	"type": "ITEM",
+																	"itemBadge": {},
+																	"badgesV2": {},
+																	"ratings": {
+																		"aggregatedRating": {
+																			"rating": "5.0",
+																			"ratingCount": "5 ratings",
+																			"ratingCountV2": "5"
+																		}
+																	},
+																	"itemPriceStrikeOff": true
+																},
+																"analytics": {},
+																"hideRestaurantDetails": true
+															}
+														}
+													],
+													"subtitleSuffix": {},
+													"categoryId": "58854473"
+												}
+											],
+											"image": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/c56e6232-17d8-47cd-958e-33370c0f8080_15ecf959-66a1-4083-8cc2-017c96331004.jpg_compressed",
+											"categoryId": "58854435"
+										}
+									}
+								},
+								{
+									"card": {
+										"card": {
+											"@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+											"title": "Wood Fired Non Veg Pizza",
+											"categories": [
+												{
+													"title": "Supreme.",
+													"itemCards": [
+														{
+															"card": {
+																"@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+																"info": {
+																	"id": "133866654",
+																	"name": "Peri Peri Chicken Pizza",
+																	"category": "Wood Fired Non Veg Pizza",
+																	"description": "Serves 1 | Our signature pizza crust loaded with Classic Mozzarella Cheese + Cheddar Cheese + Peri Peri Chicken + Red Paprika + Green Pepper + Onion",
+																	"imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/2e86fc6c-5ec3-4576-bfac-9bffba932ff1_7a17b2a2-9268-4efe-8da0-c346e9f760fa.jpg_compressed",
+																	"inStock": 1,
+																	"variants": {},
+																	"variantsV2": {
+																		"variantGroups": [
+																			{
+																				"groupId": "55586626",
+																				"name": "Size",
+																				"variations": [
+																					{
+																						"name": "8 Inch (Regular)",
+																						"price": 349,
+																						"default": 1,
+																						"id": "173013156",
+																						"inStock": 1,
+																						"isVeg": 1,
+																						"isEnabled": 1
+																					}
+																				]
+																			}
+																		],
+																		"pricingModels": [
+																			{
+																				"variations": [
+																					{
+																						"groupId": "55586626",
+																						"variationId": "173013156"
+																					}
+																				],
+																				"price": 34900,
+																				"addonCombinations": [
+																					{
+																						"groupId": "204044266",
+																						"addonId": "134089116"
+																					}
+																				]
+																			}
+																		]
+																	},
+																	"addons": [
+																		{
+																			"groupId": "204044266",
+																			"groupName": "House Special Garlic Breads!",
+																			"choices": [
+																				{
+																					"id": "134089116",
+																					"name": "Italian Cheese Garlic Bread",
+																					"price": 21900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089086",
+																					"name": "Sundried Tomatoes & Olives Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089080",
+																					"name": "Italian Pork Pepperoni Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089123",
+																					"name": "Bacon Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089076",
+																					"name": "Italian Cheese Garlic Bread With Roasted Chicken",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089078",
+																					"name": "Italian Chicken Pepperoni Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089081",
+																					"name": "Peri Peri Paneer Cheese Garlic Bread",
+																					"price": 24900,
+																					"inStock": 1,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				},
+																				{
+																					"id": "134089071",
+																					"name": "Signature Doughknots with Cheesy Jalapeno Dip",
+																					"price": 14900,
+																					"isVeg": 1,
+																					"isEnabled": 1
+																				}
+																			],
+																			"maxAddons": 5,
+																			"maxFreeAddons": -1
+																		}
+																	],
+																	"itemAttribute": {
+																		"vegClassifier": "NONVEG",
+																		"portionSize": "Serves 1"
+																	},
+																	"defaultPrice": 34900,
+																	"ribbon": {},
+																	"type": "ITEM",
+																	"itemBadge": {},
+																	"badgesV2": {},
+																	"ratings": {
+																		"aggregatedRating": {
+																			"rating": "3.7",
+																			"ratingCount": "15 ratings",
+																			"ratingCountV2": "15"
+																		}
+																	},
+																	"itemPriceStrikeOff": true
+																},
+																"analytics": {},
+																"hideRestaurantDetails": true
+															}
+														}
+													],
+													"subtitleSuffix": {},
+													"categoryId": "58854479"
+												}
+											],
+											"image": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/2e86fc6c-5ec3-4576-bfac-9bffba932ff1_7a17b2a2-9268-4efe-8da0-c346e9f760fa.jpg_compressed",
+											"categoryId": "58854437"
+										}
+									}
+								},
+								{
+									"card": {
+										"card": {
+											"@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+											"name": "Olio - The Wood Fired Pizzeria",
+											"area": "Rashbehari Avenue",
+											"completeAddress": "First Floor, No. 195, Rash Behari Avenue, Kolkata-700019, Gariahat, West Bengal"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"firstOffsetRequest": true,
+		"isQCLink": false
+	},
+	"tid": "2cfc8609-a50c-4d31-85a7-3585c09170d3",
+	"sid": "jv01110e-38cf-41d2-a180-681ae439c95a",
+	"deviceId": "4124dedf-97b5-da33-66e1-fbe293ce2571",
+	"csrfToken": "8FQu0fZSxwn6-CdJI5fOCMTnNrlMdqhObiByz68s"
+}

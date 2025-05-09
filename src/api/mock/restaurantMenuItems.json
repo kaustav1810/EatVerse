@@ -1,0 +1,68 @@
+[
+	{
+		"card": {
+			"card": {
+				"@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+				"title": "Recommended",
+				"itemCards": [
+					{
+						"card": {
+							"@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+							"info": {
+								"id": "133866633",
+								"name": "Deluxe Veggie Pizza",
+								"category": "Wood Fired Veg Pizza",
+								"description": "Serves 1 | Our signature pizza crust loaded with Classic Mozzarella Cheese + Cheddar Cheese + Onion + Green Bell Pepper",
+								"imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/c56e6232-17d8-47cd-958e-33370c0f8080_15ecf959-66a1-4083-8cc2-017c96331004.jpg_compressed",
+								"inStock": 1,
+								"isVeg": 1,
+								"price": 28900,
+								"itemAttribute": {
+									"vegClassifier": "VEG",
+									"portionSize": "Serves 1"
+								}
+							}
+						}
+					}
+				],
+				"categoryId": "-1"
+			}
+		}
+	},
+	{
+		"card": {
+			"card": {
+				"@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+				"title": "Wood Fired Veg Pizza",
+				"categories": [
+					{
+						"title": "Classic",
+						"itemCards": [
+							{
+								"card": {
+									"@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+									"info": {
+										"id": "133866633",
+										"name": "Deluxe Veggie Pizza",
+										"category": "Wood Fired Veg Pizza",
+										"description": "Serves 1 | Our signature pizza crust loaded with Classic Mozzarella Cheese + Cheddar Cheese + Onion + Green Bell Pepper",
+										"imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/12/c56e6232-17d8-47cd-958e-33370c0f8080_15ecf959-66a1-4083-8cc2-017c96331004.jpg_compressed",
+										"inStock": 1,
+										"isVeg": 1,
+										"price": 28900,
+										"itemAttribute": {
+											"vegClassifier": "VEG",
+											"portionSize": "Serves 1"
+										}
+									}
+								}
+							}
+						],
+						"categoryId": "58854473"
+					}
+				],
+				"categoryId": "58854435"
+			}
+		}
+	}
+]
