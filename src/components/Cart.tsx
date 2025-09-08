@@ -47,7 +47,7 @@ export const Cart = () => {
 				<>
 					<button
 						onClick={() =>
-							dispatch(clearCart(cart))
+							dispatch(clearCart())
 						}
 						className='p-4 w-40 bg-purple-200 mt-4 rounded-md hover:bg-purple-300 border-purple-950 cursor-pointer'>
 						Clear Cart
