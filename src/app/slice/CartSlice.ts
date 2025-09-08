@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { MenuItem } from "../../common/types/common.types";
 import type { RootState } from "../store";
 import type { IDishCard } from "../../common/types/restaurantDetails.types";
 
@@ -50,7 +49,7 @@ const CartSlice = createSlice({
 			
 			
 		},
-		clearCart: (state, action) => {
+		clearCart: (state) => {
 			state.items.length = 0;
 		},
 	},

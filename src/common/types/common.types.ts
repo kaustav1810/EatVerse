@@ -1,34 +1,33 @@
 interface Dish {
 	'@type': string;
 	info: DishInfo;
-	analytics: Record<string, any>;
 	hideRestaurantDetails: boolean;
 }
 
 interface DishInfo {
-	id: string;
-	name: string;
-	category: string;
-	description: string;
-	imageId: string;
-	inStock: number;
-	isVeg: number;
-	price: number;
-	variants: Record<string, any>;
-	variantsV2: Record<string, any>;
-	addons: AddonGroup[];
-	itemAttribute: ItemAttribute;
-	defaultPrice: number;
-	ribbon: Record<string, any>;
-	showImage: boolean;
-	offerTags: OfferTag[];
-	itemBadge: Record<string, any>;
-	badgesV2: Record<string, any>;
-	ratings: Ratings;
-	itemPriceStrikeOff: boolean;
-	offerIds: string[];
-	finalPrice: number;
-	quantity?:number;
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  imageId: string;
+  inStock: number;
+  isVeg: number;
+  price: number;
+  variants: Record<string, unknown>;
+  variantsV2: Record<string, unknown>;
+  addons: AddonGroup[];
+  itemAttribute: ItemAttribute;
+  defaultPrice: number;
+  ribbon: Record<string, unknown>;
+  showImage: boolean;
+  offerTags: OfferTag[];
+  itemBadge: Record<string, unknown>;
+  badgesV2: Record<string, unknown>;
+  ratings: Ratings;
+  itemPriceStrikeOff: boolean;
+  offerIds: string[];
+  finalPrice: number;
+  quantity?: number;
 }
 
 interface AddonGroup {
