@@ -48,6 +48,20 @@ export interface IGenericCard {
 	kidsCategoryFilter?: IFilterAttributeWithTooltip;
 	vegFilter?: IFilterAttribute;
 	nonvegFilter?: IFilterAttribute;
+	// Restaurant info properties
+	info?: IRestaurantInfo;
+}
+
+// Restaurant info interface for the restaurant details card
+export interface IRestaurantInfo {
+	name?: string;
+	areaName?: string;
+	costForTwoMessage?: string;
+	cuisines?: string[];
+	sla?: {
+		slaString?: string;
+		deliveryTime?: number;
+	};
 }
 
 export interface IHeaderStyling {

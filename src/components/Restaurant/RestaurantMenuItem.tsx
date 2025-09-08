@@ -1,8 +1,6 @@
-import React, { useMemo } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem, removeItem, selectedItemInfo } from '../../app/slice/CartSlice';
 import { RESTAURANT_IMAGE_URL } from '../../common/constants/ApiConstants';
-import { useDispatch, useSelector } from 'react-redux';
-import type { ICartInitialState, MenuItem } from '../../common/types/common.types';
 import type { IDishCard } from '../../common/types/restaurantDetails.types';
 
 export const RestaurantMenuItem = ({
@@ -14,17 +12,7 @@ export const RestaurantMenuItem = ({
 }) => {
 	const dispatch = useDispatch();
 
-	const cart = useSelector((store: ICartInitialState) => store.cart.items);
-
 	const selectedItem = useSelector(selectedItemInfo(menuItem?.card?.info?.id as string));
-
-	// const selectedItem = useMemo(() => {
-	// 	return cart.find(
-	// 		(item) =>
-	// 			item?.card?.info?.id ===
-	// 			menuItem?.card?.info?.id
-	// 	);
-	// }, [cart, menuItem]);
 
 	return (
 		<div className='flex flex-col px-2 py-4'>

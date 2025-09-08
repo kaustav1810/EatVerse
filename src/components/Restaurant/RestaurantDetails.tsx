@@ -1,10 +1,6 @@
-import { useContext, useEffect, useRef, useState } from 'react';
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import type { IMenuCard, IRestaurantInfo } from '../../common/types/restaurantDetails.types';
+import { useRestaurantDetails } from '../../hooks/useRestaurantDetails';
 import { RestaurantItem } from './RestaurantItem';
-import { UserContext } from '../../common/utils/UserContext';
-import { useRestaurantDetails } from '../../common/utils/useRestaurantDetails';
-import type { IMenuCard } from '../../common/types/restaurantDetails.types';
 
 export const RestaurantDetails = ({
 	menuItems,
@@ -14,33 +10,26 @@ export const RestaurantDetails = ({
 	const restaurantDetails =
 		useRestaurantDetails();
 
-	const restaurantInfo =
-		restaurantDetails?.data?.cards[2]?.card?.card
-			?.info || {};
+	const restaurantInfo: IRestaurantInfo =
+		restaurantDetails?.data?.cards?.[2]?.card?.card?.info || {};
 	const restaurantMenu =
 		restaurantDetails?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.slice(
 			2
 		) || [];
 
 	const nestedCategories =
-		restaurantMenu.filter((menu: any) =>
+		restaurantMenu.filter((menu) =>
 			menu?.card?.card?.['@type']?.includes(
 				'.NestedItemCategory'
 			)
 		) || [];
 
 	const itemCategories =
-		restaurantMenu.filter((menu: any) =>
+		restaurantMenu.filter((menu) =>
 			menu?.card?.card?.['@type']?.includes(
 				'.ItemCategory'
 			)
 		) || [];
-
-	console.log('itemCategories', itemCategories);
-	console.log(
-		'nestedCategories',
-		nestedCategories
-	);
 
 	const restaurantMenuItems = [
 		...itemCategories,

@@ -7,7 +7,7 @@ export const useNetworkStatus = () => {
     useEffect(() => {
 
         
-        window.addEventListener('offline', (e) => {
+        window.addEventListener('offline', () => {
             setIsOnline(false);
         });
 

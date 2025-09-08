@@ -1,6 +1,5 @@
-import React from 'react';
-import { RestaurantMenuItem } from './RestaurantMenuItem';
 import type { IGenericCard, INestedCategory } from '../../common/types/restaurantDetails.types';
+import { RestaurantMenuItem } from './RestaurantMenuItem';
 
 export const RestaurantItemDropdown = ({
 	item: restItem,
@@ -10,7 +9,7 @@ export const RestaurantItemDropdown = ({
 		<>
 			{
 				restItem?.itemCards?.map(item => 
-				<RestaurantMenuItem menuItem={ item} />
+				<RestaurantMenuItem key={item?.card?.info?.id} menuItem={ item} />
 				)
 			}
 		</>

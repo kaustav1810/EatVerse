@@ -58,6 +58,7 @@ export const Cart = () => {
 					<div>
 						{cart?.map((item) => (
 							<RestaurantMenuItem
+							key={item?.card?.info?.id}
 							isAddToCart={false}
 							menuItem={item}
 							/>

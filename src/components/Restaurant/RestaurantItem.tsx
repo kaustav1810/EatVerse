@@ -2,7 +2,6 @@ import React, {
 	useCallback,
 	useState,
 } from 'react';
-import { RESTAURANT_IMAGE_URL } from '../../common/constants/ApiConstants';
 import { RestaurantItemDropdown } from './RestaurantItemDropdown';
 import { NestedRestaurantItemDropdown } from './NestedRestaurantItemDropdown';
 import type { IGenericCard, IMenuCard } from '../../common/types/restaurantDetails.types';
@@ -24,7 +23,7 @@ export const RestaurantItem = ({
 		(index: number) => {
 			setIsOpenAccordion(
 				(previsOpenAccordion) => {
-					let newIsOpenAccordion = [
+					const newIsOpenAccordion = [
 						...previsOpenAccordion,
 					];
 					newIsOpenAccordion[index] =
@@ -44,13 +43,6 @@ export const RestaurantItem = ({
 		'@type'
 	]?.includes('.NestedItemCategory');
 
-	console.log(
-		isNestedCategory,
-		'isNestedCategory'
-	);
-
-	console.log(item, "item");
-	
 	return (
 		<div className='my-4 bg-gray-50 p-6'>
 			<div
@@ -75,7 +67,6 @@ export const RestaurantItem = ({
 			{isNestedCategory
 				? item?.card?.card?.categories?.map(
 						(category, i) => {
-							console.log('category', i);
 							return (
 								<div key={i}>
 									<NestedRestaurantItemDropdown

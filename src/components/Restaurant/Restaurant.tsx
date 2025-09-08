@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { RESTAURANT_IMAGE_URL } from '../../common/constants/ApiConstants';
 import type { IRestaurant } from '../../common/types/restaurant.types';
@@ -42,15 +42,15 @@ interface RestaurantProps {
 	);
 }
 
-const PromotedRestaurant = (WrappedComponent: React.ComponentType<any>) => {
-	return (props: any) => {
+const PromotedRestaurant = (WrappedComponent: React.ComponentType<RestaurantProps>) => {
+	return function PromotedComponent(props: RestaurantProps) {
 		return (
 			<>
 				<label>promoted</label>
 				<WrappedComponent {...props} />
 			</>
 		);
-	}
+	};
 };
 
 export { PromotedRestaurant, Restaurant };

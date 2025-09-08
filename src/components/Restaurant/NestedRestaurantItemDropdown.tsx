@@ -1,4 +1,3 @@
-import React, { useCallback, useState } from 'react'
 import type { INestedCategory } from '../../common/types/restaurantDetails.types';
 
 

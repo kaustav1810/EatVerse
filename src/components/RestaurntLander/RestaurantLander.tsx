@@ -1,23 +1,18 @@
-import React, {
+import {
 	useContext,
-	useEffect,
 	useState,
 	type Dispatch,
-	type SetStateAction,
+	type SetStateAction
 } from 'react';
-import NavBar from '../NavBar/NavBar';
-import { PromotedRestaurant, Restaurant } from '../Restaurant/Restaurant';
-import { Outlet } from 'react-router-dom';
-import { RESTAURANT_LIST_URL } from '../../common/constants/ApiConstants';
-import { useNetworkStatus } from '../../common/utils/useNetworkStatus';
-import { useRestaurantList } from '../../common/utils/useRestaurantList';
-import { UserContext } from '../../common/utils/UserContext';
 import type { IRestaurant } from '../../common/types/restaurant.types';
+import { UserContext } from '../../common/utils/UserContext';
+import { useNetworkStatus } from '../../hooks/useNetworkStatus';
+import { useRestaurantList } from '../../hooks/useRestaurantList';
+import { PromotedRestaurant, Restaurant } from '../Restaurant/Restaurant';
 
 export default function RestaurantLander() {
-	const isOnline = useNetworkStatus();
-
-	const { setUserName } = useContext<any>(UserContext);
+	const isOnline = useNetworkStatus();	
+	const { setUserName } = useContext(UserContext);
 
 	const [searchText, setSearchText] =
 		useState('');
@@ -41,6 +36,7 @@ export default function RestaurantLander() {
 			(restaurant:IRestaurant) =>
 				restaurant?.info?.promoted ? (
 					<RestPromoted
+						key={restaurant?.info?.id}
 						restaurant={restaurant}
 					/>
 				) :
@@ -73,7 +69,6 @@ export default function RestaurantLander() {
 					.includes(searchText.toLowerCase())
 			);
 
-		console.log(filteredRestaurants);
 
 		setFilteredRestaurants(filteredRestaurants);
 	};
@@ -121,7 +116,6 @@ export default function RestaurantLander() {
 						className='border-black'
 						type='text'
 					onChange={(e) => {
-						console.log(e.target.value);
 						setSearchText(e.target.value);
 						setUserName(e.target.value);
 
