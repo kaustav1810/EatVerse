@@ -3,11 +3,33 @@ import { Link } from 'react-router-dom';
 import { RESTAURANT_IMAGE_URL } from '../../common/constants/ApiConstants';
 import type { IRestaurant } from '../../common/types/restaurant.types';
 
+/**
+ * Props interface for the Restaurant component
+ * 
+ * @interface RestaurantProps
+ * @property {IRestaurant} restaurant - Restaurant data object containing info, analytics, and CTA data
+ */
 interface RestaurantProps {
 	restaurant: IRestaurant;
 }
 
- const Restaurant  = ({
+/**
+ * Restaurant Card Component
+ * 
+ * Displays a single restaurant as a clickable card with image, name, rating,
+ * cuisine types, and location. Includes accessibility features and responsive design.
+ * 
+ * Features:
+ * - Hover animations with CSS transforms
+ * - Lazy loading for images
+ * - Semantic HTML with proper ARIA labels
+ * - Discount information display
+ * - Promoted restaurant indicator
+ * 
+ * @param {RestaurantProps} props - Component props
+ * @returns {JSX.Element} Restaurant card component
+ */
+const Restaurant = ({
 	restaurant,
 }: RestaurantProps) => {
 	return (
