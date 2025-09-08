@@ -49,7 +49,17 @@ export const RestaurantItem = ({
 				className={`flex justify-between ${
 					!isNestedCategory && 'cursor-pointer'
 				}`}
-				onClick={handleMainAccordion}>
+				onClick={handleMainAccordion}
+				onKeyDown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						e.preventDefault();
+						handleMainAccordion();
+					}
+				}}
+				tabIndex={!isNestedCategory ? 0 : -1}
+				role="button"
+				aria-expanded={isOpenMainAccordion}
+				aria-label={`${isOpenMainAccordion ? 'Collapse' : 'Expand'} ${item?.card?.card?.title} menu section`}>
 				<h3 className='font-bold'>{`${
 					item?.card?.card?.title
 				} ${

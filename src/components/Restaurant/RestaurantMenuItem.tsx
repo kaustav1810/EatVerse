@@ -55,27 +55,31 @@ export const RestaurantMenuItem = ({
 								Add
 							</button>
 						) : (
-							<div className='cursor-pointer rounded-md w-40 py-2 text-green-600 uppercase relative bg-white px-2 -top-6 border-gray-200 border-[1px] flex justify-evenly left-5'>
-								<span
-									className=' text-green-600 font-bold'
+							<div className='rounded-md w-40 py-2 text-green-600 uppercase relative bg-white px-2 -top-6 border-gray-200 border-[1px] flex justify-evenly left-5' role="group" aria-label="Quantity controls">
+								<button
+									className='text-green-600 font-bold cursor-pointer bg-transparent border-none text-lg w-8 h-8 flex items-center justify-center hover:bg-green-50 rounded'
 									onClick={() =>
 										dispatch(removeItem(menuItem))
-									}>
+									}
+									aria-label={`Remove ${menuItem?.card?.info?.name} from cart`}
+									type="button">
 									-
-								</span>
-								<span data-testid='item-quantity'>
+								</button>
+								<span data-testid='item-quantity' aria-label={`Quantity: ${selectedItem?.card?.info?.quantity}`} className="flex items-center">
 									{
 										selectedItem?.card?.info
 											?.quantity
 									}
 								</span>
-								<span
-									className=' text-green-600 font-bold'
+								<button
+									className='text-green-600 font-bold cursor-pointer bg-transparent border-none text-lg w-8 h-8 flex items-center justify-center hover:bg-green-50 rounded'
 									onClick={() =>
 										dispatch(addItem(menuItem))
-									}>
+									}
+									aria-label={`Add ${menuItem?.card?.info?.name} to cart`}
+									type="button">
 									+
-								</span>
+								</button>
 							</div>
 						))}
 				</div>

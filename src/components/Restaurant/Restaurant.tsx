@@ -11,16 +11,18 @@ interface RestaurantProps {
 	restaurant,
 }: RestaurantProps) => {
 	return (
-		<div className='m-3 p-1 cursor-pointer w-52 break-words transform transition-transform duration-200 hover:scale-90'>
-			{restaurant?.info?.promoted && <div>Kaustav</div>}
+		<article className='m-3 p-1 w-52 break-words transform transition-transform duration-200 hover:scale-90'>
+			{restaurant?.info?.promoted && <span className="sr-only">Promoted restaurant</span>}
 			<Link
-				className='no-underline font-black'
-				to={`/restaurant/${restaurant?.info?.id}`}>
+				className='no-underline font-black block'
+				to={`/restaurant/${restaurant?.info?.id}`}
+				aria-label={`View details for ${restaurant?.info?.name}`}>
 				<div className='mb-1 font-light'>
 					<img
 						className='w-full h-36 rounded-2xl object-cover filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)] bg-[linear-gradient(to_bottom,_rgba(0,0,0,0)_20%,_rgba(0,0,0,1))]'
 						src={`${RESTAURANT_IMAGE_URL}${restaurant?.info?.cloudinaryImageId}`}
-						alt=''
+						alt={`${restaurant?.info?.name} restaurant`}
+						loading="lazy"
 					/>
 					{restaurant?.info
 						?.aggregatedDiscountInfoV3 && (
@@ -38,7 +40,7 @@ interface RestaurantProps {
 				</div>
 				<div className='font-[300]'>{`${restaurant?.info?.locality},${restaurant?.info?.areaName}`}</div>
 			</Link>
-		</div>
+		</article>
 	);
 }
 
@@ -46,7 +48,7 @@ const PromotedRestaurant = (WrappedComponent: React.ComponentType<RestaurantProp
 	return function PromotedComponent(props: RestaurantProps) {
 		return (
 			<>
-				<label>promoted</label>
+				<span className='sr-only' aria-label="Promoted restaurant">promoted</span>
 				<WrappedComponent {...props} />
 			</>
 		);

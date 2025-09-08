@@ -104,43 +104,66 @@ export default function RestaurantLander() {
 		setFilteredRestaurants(filteredRestaurants);
 	};
 	return !isOnline ? (
-		<div>
-			Sorry! please check your internet
-			connection!!
-		</div>
+		<main role="main" aria-live="polite">
+			<div className="text-center p-8" role="alert">
+				<h1 className="text-2xl font-bold mb-4">Connection Error</h1>
+				<p>Sorry! Please check your internet connection and try again.</p>
+			</div>
+		</main>
 	) : (
-		<div className=''>
-			{/* <NavBar /> */}
-			<div>
+		<main className='' role="main">
+			<section className="search-and-filters" aria-label="Search and filter restaurants">
+				<div className="mb-6 p-4">
+					<label htmlFor="restaurant-search" className="sr-only">Search restaurants</label>
 					<input
-						className='border-black'
+						id="restaurant-search"
+						className='border-black border p-2 rounded'
 						type='text'
-					onChange={(e) => {
-						setSearchText(e.target.value);
-						setUserName(e.target.value);
-
-					}}
-				/>
-				<button className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1] transition-transform duration-75 ease-in-out hover:scale-[1.1]' onClick={handleSearch}>
-					search
-				</button>
-				<button className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' onClick={filterTopRestaurants}>
-					Rating 4.0+
-				</button>
-				<button className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' onClick={filterVegRestaurants}>
-					Pure Veg
-				</button>
-				<button className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' onClick={filterOfferRestaurants}>
-					Offers
-				</button>
-				<button className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]'
-					onClick={filterFastDeliveryRestaurants}>
-					Fast Delivery
-				</button>
-			</div>
-			<div className='flex flex-wrap'>
+						placeholder="Search restaurants..."
+						value={searchText}
+						onChange={(e) => {
+							setSearchText(e.target.value);
+							setUserName(e.target.value);
+						}}
+						aria-label="Search restaurants by name"
+					/>
+					<button 
+						className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' 
+						onClick={handleSearch}
+						aria-label="Search restaurants">
+						Search
+					</button>
+					<div role="group" aria-label="Restaurant filters" className="flex flex-wrap gap-2">
+						<button 
+							className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' 
+							onClick={filterTopRestaurants}
+							aria-label="Filter restaurants with rating 4.0 and above">
+							Rating 4.0+
+						</button>
+						<button 
+							className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' 
+							onClick={filterVegRestaurants}
+							aria-label="Filter pure vegetarian restaurants">
+							Pure Veg
+						</button>
+						<button 
+							className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]' 
+							onClick={filterOfferRestaurants}
+							aria-label="Filter restaurants with offers">
+							Offers
+						</button>
+						<button 
+							className='cursor-pointer m-[10px] py-2.5 px-4 outline-none border-none rounded-full text-[0.8rem] bg-gray-200 transition-transform duration-75 ease-in-out hover:scale-[1.1]'
+							onClick={filterFastDeliveryRestaurants}
+							aria-label="Filter restaurants with fast delivery (under 40 minutes)">
+							Fast Delivery
+						</button>
+					</div>
+				</div>
+			</section>
+			<section aria-label="Restaurant listings" className='flex flex-wrap'>
 				{loadRestaurantCards()}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 }

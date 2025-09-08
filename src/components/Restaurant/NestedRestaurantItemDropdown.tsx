@@ -16,7 +16,17 @@ export const NestedRestaurantItemDropdown = ({
 	return (
 		<div
 			className='flex flex-col px-2'
-			onClick={() => handleAccordion(index)}>
+			onClick={() => handleAccordion(index)}
+			onKeyDown={(e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					handleAccordion(index);
+				}
+			}}
+			tabIndex={0}
+			role="button"
+			aria-expanded={isOpenAccordion[index]}
+			aria-label={`${isOpenAccordion[index] ? 'Collapse' : 'Expand'} ${category.title} submenu`}>
 			<div className='flex justify-between cursor-pointer my-4'>
 				<h4
 					className={`font-semibold ${
